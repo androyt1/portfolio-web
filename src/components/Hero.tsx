@@ -78,7 +78,9 @@ export default function Hero() {
       {/* ── TEXT CONTENT ── */}
       <div
         style={{
-          paddingTop: "clamp(100px,16vh,140px)",
+          paddingTop: isMobile
+            ? "clamp(60px,8vh,90px)"
+            : "clamp(100px,16vh,140px)",
           paddingBottom: "clamp(44px,8vh,80px)",
           zIndex: 1,
         }}
